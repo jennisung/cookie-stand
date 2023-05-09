@@ -30,13 +30,17 @@ const seattle = {
     }
     this.randomCookie.push(buyCookies);
 
+
+    //Dom article
     let articleEle = document.createElement('article');
     cookieSection.appendChild(articleEle);
 
+    //Dom Heading
     let cookieHeading = document.createElement('h2');
     cookieHeading.innerText = this.name;
     articleEle.appendChild(cookieHeading);
 
+    // Dom for uL
     let cookieUL = document.createElement('ul');
     articleEle.appendChild(cookieUL);
 
@@ -46,8 +50,9 @@ const seattle = {
       cookieUL.appendChild(hoursLI);
     }
 
+    //Dom for total
     let cookieTotal = document.createElement('li');
-    let cookieTotalTwo = this.randomCookie[this.randomCookie.length - 1]; 
+    let cookieTotalTwo = this.randomCookie[this.randomCookie.length - 1];
     cookieTotal.innerText = `Total: ${cookieTotalTwo}`;
     cookieUL.appendChild(cookieTotal);
   },
@@ -67,7 +72,6 @@ const tokyo = {
     return Math.floor(Math.random() * (maxCust - minCust + 1) + minCust);
   },
 
-
   render: function() {
     let buyCookies = 0;
     for (let i = 0; i < hours.length; i++) {
@@ -79,13 +83,16 @@ const tokyo = {
     }
     this.randomCookie.push(buyCookies);
 
+    //Dom article
     let articleEle = document.createElement('article');
     cookieSection.appendChild(articleEle);
 
+    //Dom Heading
     let cookieHeading = document.createElement('h2');
     cookieHeading.innerText = this.name;
     articleEle.appendChild(cookieHeading);
 
+    // Dom for uL
     let cookieUL = document.createElement('ul');
     articleEle.appendChild(cookieUL);
 
@@ -95,6 +102,7 @@ const tokyo = {
       cookieUL.appendChild(hoursLI);
     }
 
+    //Dom for total
     let cookieTotal = document.createElement('li');
     let cookieTotalTwo = this.randomCookie[this.randomCookie.length - 1]; 
     cookieTotal.innerText = `Total: ${cookieTotalTwo}`;
@@ -115,7 +123,6 @@ const dubai = {
     return Math.floor(Math.random() * (maxCust - minCust + 1) + minCust);
   },
 
-
   render: function() {
     let buyCookies = 0;
     for (let i = 0; i < hours.length; i++) {
@@ -127,13 +134,16 @@ const dubai = {
     }
     this.randomCookie.push(buyCookies);
 
+    //Dom article
     let articleEle = document.createElement('article');
     cookieSection.appendChild(articleEle);
 
+    //Dom Heading
     let cookieHeading = document.createElement('h2');
     cookieHeading.innerText = this.name;
     articleEle.appendChild(cookieHeading);
 
+    // Dom for uL
     let cookieUL = document.createElement('ul');
     articleEle.appendChild(cookieUL);
 
@@ -143,6 +153,7 @@ const dubai = {
       cookieUL.appendChild(hoursLI);
     }
 
+    //Dom for total
     let cookieTotal = document.createElement('li');
     let cookieTotalTwo = this.randomCookie[this.randomCookie.length - 1]; 
     cookieTotal.innerText = `Total: ${cookieTotalTwo}`;
@@ -162,7 +173,6 @@ const paris = {
     return Math.floor(Math.random() * (maxCust - minCust + 1) + minCust);
   },
 
-
   render: function() {
     let buyCookies = 0;
     for (let i = 0; i < hours.length; i++) {
@@ -174,13 +184,16 @@ const paris = {
     }
     this.randomCookie.push(buyCookies);
 
+    //Dom article
     let articleEle = document.createElement('article');
     cookieSection.appendChild(articleEle);
 
+    //Dom Heading
     let cookieHeading = document.createElement('h2');
     cookieHeading.innerText = this.name;
     articleEle.appendChild(cookieHeading);
 
+    // Dom for uL
     let cookieUL = document.createElement('ul');
     articleEle.appendChild(cookieUL);
 
@@ -190,6 +203,7 @@ const paris = {
       cookieUL.appendChild(hoursLI);
     }
 
+    //Dom for total
     let cookieTotal = document.createElement('li');
     let cookieTotalTwo = this.randomCookie[this.randomCookie.length - 1]; 
     cookieTotal.innerText = `Total: ${cookieTotalTwo}`;
@@ -209,7 +223,6 @@ const lima = {
     return Math.floor(Math.random() * (maxCust - minCust + 1) + minCust);
   },
 
-
   render: function() {
     let buyCookies = 0;
     for (let i = 0; i < hours.length; i++) {
@@ -221,13 +234,16 @@ const lima = {
     }
     this.randomCookie.push(buyCookies);
 
+    //Dom article
     let articleEle = document.createElement('article');
     cookieSection.appendChild(articleEle);
 
+    //Dom Heading
     let cookieHeading = document.createElement('h2');
     cookieHeading.innerText = this.name;
     articleEle.appendChild(cookieHeading);
 
+    // Dom for uL
     let cookieUL = document.createElement('ul');
     articleEle.appendChild(cookieUL);
 
@@ -237,6 +253,7 @@ const lima = {
       cookieUL.appendChild(hoursLI);
     }
 
+    //Dom for total
     let cookieTotal = document.createElement('li');
     let cookieTotalTwo = this.randomCookie[this.randomCookie.length - 1]; 
     cookieTotal.innerText = `Total: ${cookieTotalTwo}`;

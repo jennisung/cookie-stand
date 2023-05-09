@@ -1,7 +1,6 @@
 # cookie-stand
 
-
-# LAB - 06
+# Class Lab - 06
 
 ## Project Name: Cookie-Stand
 
@@ -11,12 +10,12 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Links and Resources
 
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
+* [ChatGBT](https://chat.openai.com/)
+* [Mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 
 ### Lighthouse Accessibility Report Score
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
+![access-image](img/access-image.jpg)
 
 ### Reflections and Comments
 

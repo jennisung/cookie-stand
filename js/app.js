@@ -38,7 +38,6 @@ function headerFunction() {
   headRow.appendChild(totalHeaderCell);
 }
 
-headerFunction();
 
 // FOOTER ROW FUNCTION //
 function footerFunction() {
@@ -56,7 +55,6 @@ function footerFunction() {
   }
 }
 
-footerFunction();
 
 // **** CONSTRUCTOR FUNCTION ****
 function Store(name, minCust, maxCust, avgCookie) {
@@ -117,5 +115,8 @@ cityArray.push(seattle, tokyo, dubai, paris, lima);
 // paris.render();
 // lima.render();
 
+headerFunction();
 renderAllCities();
+footerFunction();
+
 

@@ -278,5 +278,3 @@
 // lima.render();
 // console.log(lima.randomGen);
 
-
-

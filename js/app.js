@@ -49,11 +49,33 @@ function footerFunction() {
   cell.textContent = 'Totals';
   footRow.appendChild(cell);
 
-  for (let i = 0; i < hours.length + 1; i++) {
+  let perHourTotals = []; 
+
+  ////* class *////
+  for (let i = 0; i < hours.length; i++) {
+    let total = 0;
+
+    for (let j = 0; j < cityArray.length; j++) {
+      total += cityArray[j].randomCookie[i];
+    }
+
+    perHourTotals.push(total);
+
     let cell = document.createElement('td');
+    cell.textContent = total;
     footRow.appendChild(cell);
   }
+
+  let total = 0;
+  for (let i = 0; i < perHourTotals.length; i++) {
+    total += perHourTotals[i];
+  }
+
+  let totalCell = document.createElement('td');
+  totalCell.textContent = total;
+  footRow.appendChild(totalCell);
 }
+
 
 
 // **** CONSTRUCTOR FUNCTION ****
@@ -97,7 +119,9 @@ Store.prototype.render = function() {
 
   let table = document.querySelector('table');
   table.appendChild(chRow);
-};
+
+}
+
 
 
 // *** EXECUTABLE (executes on page load) CODE ***

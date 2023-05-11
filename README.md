@@ -4,7 +4,7 @@
 
 ## Project Name: Cookie-Stand
 
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+This website is a simple online storefront that was created using JavaScript, CSS, and HTML. It serves as a basic platform for displaying and selling products.
 
 ### Author: Jennifer Sung
 
@@ -15,9 +15,7 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score
 
-![access-image](img/access-image.jpg)
+![access-image](img/accessibility96.png)
 
-### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+

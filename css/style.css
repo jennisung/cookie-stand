@@ -87,32 +87,38 @@ button {
 
 h1 {
   font-size: 40px;
-  color: black;
+  color: Black;
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h2, ul, p {
+h2, p {
   text-align: center;
   margin-left: 40px;
   margin-right: 40px;
   margin-bottom: 20px;
-  font-family: 'Courier New', Courier, monospace;
   margin-top: 20px;
 
+}
+
+p {
+  font-family: 'Inria Serif', serif;
+  color: black;
 }
 
 
 h3 {
   font-size: 30px;
-  color: black;
+  color: rgb(99, 0, 114);
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 25px;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Inria Serif', serif
+
 }
+
 th {
   font-weight:900;
 }
@@ -128,7 +134,7 @@ footer {
   padding-right: 10px;
   height: 100px;
   margin-top: 30px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Inria Serif', serif
 
 }
 
@@ -137,8 +143,9 @@ footer {
 
 table * {
   font-family: 'Archivo', sans-serif;
+  color: rgb(114, 0, 84);
   background-color: white;
-  border: 1px double #020005;
+  border: 1px double #b6035f;
   padding: 8px;
  
 }

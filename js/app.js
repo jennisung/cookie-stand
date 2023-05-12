@@ -21,7 +21,6 @@ function handleSubmit(event){
   event.preventDefault();
   // console.log('okay');
 
-
   let cityInput = event.target.cityInput.value;
 
   let minCustomer = Number(event.target.minCustomer.value);
@@ -33,12 +32,22 @@ function handleSubmit(event){
   let newCityStore = new Store(cityInput, minCustomer, maxCustomer, cookiesPerDay);
 
 
+  // // cityArray.push(newCityStore);
+
+  // table.deleteRow(-1);
+
+  // newCityStore.renderList();
+
+  // footerFunction();
+
+  // myForm.reset();
+
   cityArray.push(newCityStore);
 
+  let table = document.querySelector('table');
+  table.deleteRow(table.rows.length - 1);
 
   newCityStore.render();
-
-  document.getElementById('cookie-profiles').deleteRow(-1);
 
   footerFunction();
 

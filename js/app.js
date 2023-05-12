@@ -20,6 +20,8 @@ function renderAllCities() {
 function handleSubmit(event){
   event.preventDefault();
   // console.log('okay');
+
+
   let cityInput = event.target.cityInput.value;
 
   let minCustomer = Number(event.target.minCustomer.value);
@@ -30,13 +32,18 @@ function handleSubmit(event){
 
   let newCityStore = new Store(cityInput, minCustomer, maxCustomer, cookiesPerDay);
 
+
   cityArray.push(newCityStore);
+
 
   newCityStore.render();
 
-  // document.getElementById('cookie-profiles').deleteRow(-1);
+  document.getElementById('cookie-profiles').deleteRow(-1);
+
+  footerFunction();
 
   myForm.reset();
+
 }
 
 myForm.addEventListener('submit', handleSubmit);
@@ -154,6 +161,8 @@ Store.prototype.render = function() {
 
 }
 
+
+
 // *** EXECUTABLE (executes on page load) CODE ***
 let seattle = new Store('Seattle', 23, 65, 6.3);
 let tokyo = new Store('Tokyo', 3, 24, 1.2);
@@ -168,6 +177,7 @@ cityArray.push(seattle, tokyo, dubai, paris, lima);
 // dubai.render();
 // paris.render();
 // lima.render();
+
 
 headerFunction();
 renderAllCities();

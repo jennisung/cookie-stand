@@ -1,5 +1,6 @@
 body {
   background-color:  #ffb39c;
+
 }
 
 /* BUTTONS */
@@ -33,21 +34,20 @@ button {
   margin-top: 30px;
 }
 
-/* BUTTON END */
+/* END OF BUTTON */
 
 
 /* IMAGES  */
 
 .salmon-pic {
   transform: scaleX(-1);
-  max-width: 19%;
+  max-width: 18%;
   float: left
 }
 
 .salmon-pic2 {
   transform: scaleX(1);
-  max-width: 19%;
-  max-width: 19%;
+  max-width: 18%;
   float: right
 }
 
@@ -56,10 +56,13 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+  border: black solid 2px;
 }
 
 .fish-shirt {
   height: 300px;
+  border: black solid 2px;
+
 }
 
 .fish-merch {
@@ -67,10 +70,19 @@ button {
   justify-content: center;
   margin-top: 30px;
   gap: 50px;
+  
 }
 
+.cookie-cutter, .fish-animated {
+  border: black solid 2px;
+
+}
+
+
 .chinook-fish {
-  width: 40%;
+  width: 21%;
+  border: black solid 2px;
+
 }
 
 .family-picture {
@@ -78,11 +90,16 @@ button {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+  border: black solid 2px;
+
 
 }
 
 
-/* IMAGES END  */
+/* END OF IMAGES  */
+
+
+/* TEXT TITLES PARAGRAPHS */
 
 h1 {
   font-size: 40px;
@@ -118,13 +135,71 @@ h3 {
 
 }
 
-th {
-  font-weight:900;
+/* END OF TEXT TITLES PARAGRAPHS */
+
+
+
+/* FORMS AND EVENT LISTENER */
+
+form {
+  background-color: #d2becb;
+  color: black;
+  padding: 16px 32px;
+  margin: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 16%;
+  border: black solid 2px;
+  border-radius: 10px;
+
+}
+
+#form-box {
+  display:flex;
+  justify-content: center;
+}
+
+input {
+  display: block;
+  margin-bottom: 25px;
+  margin: 10px auto;
+  
+}
+
+select {
+  display: block;
+  margin-bottom: 25px;
+}
+
+legend {
+  padding:5px;
+}
+/* END OF FORMS AND EVENT LISTENER */
+
+
+/* TABLES STYLE PAGE */
+
+table * {
+  font-family: 'Archivo', sans-serif;
+  color: rgb(114, 0, 84);
+  background-color: white;
+  border: 2px double #b6035f;
+  padding: 8px;
+ 
+}
+
+.data-chart {
+  display:flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-top: 200px;
 }
 
 td {
   text-align: center;
 }
+
+/* END OF TABLES STYLE PAGE */
 
 footer {
   font-size: 20px;
@@ -135,25 +210,6 @@ footer {
   margin-top: 30px;
   font-family: 'Inria Serif', serif
 
-}
-
-
-/* TABLES STYLE PAGE */
-
-table * {
-  font-family: 'Archivo', sans-serif;
-  color: rgb(114, 0, 84);
-  background-color: white;
-  border: 1px double #b6035f;
-  padding: 8px;
- 
-}
-
-.data-chart {
-  display:flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-top: 200px;
 }
 
 

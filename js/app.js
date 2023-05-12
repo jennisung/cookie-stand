@@ -1,19 +1,49 @@
 'use strict';
 
 //global//
-
-let cookieSection = document.getElementById('cookie-profiles');
-
-
+const cityArray = [];
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
-const cityArray = [];
+//////* LAB 09 EVENTS AND FORMS *///////
 
+//Grabbing form for event submission  //
+let cookieSection = document.getElementById('cookie-profiles');
+let myForm = document.getElementById('my-form');
+
+//Helper function//
 function renderAllCities() {
   for (let i = 0; i < cityArray.length; i++) {
     cityArray[i].render();
   }
 }
+
+function handleSubmit(event){
+  event.preventDefault();
+  // console.log('okay');
+  let cityInput = event.target.cityInput.value;
+
+  let minCustomer = Number(event.target.minCustomer.value);
+
+  let maxCustomer = Number(event.target.maxCustomer.value);
+
+  let cookiesPerDay = Number(event.target.cookiesPerDay.value);
+
+  let newCityStore = new Store(cityInput, minCustomer, maxCustomer, cookiesPerDay);
+
+  cityArray.push(newCityStore);
+
+  newCityStore.render();
+
+  // document.getElementById('cookie-profiles').deleteRow(-1);
+
+  myForm.reset();
+}
+
+myForm.addEventListener('submit', handleSubmit);
+
+
+//list of ID: cityInput (text), minCustomer (number), maxCustomer (number), cookiesPerDay (number)
+//////* END OF LAB 09 EVENTS AND FORMS *///////
 
 
 // HEADER ROW FUNCTION//
@@ -40,7 +70,7 @@ function headerFunction() {
 
 
 // FOOTER ROW FUNCTION //
-function footerFunction() {
+let footerFunction = function() {
   let table = document.querySelector('table');
   let footRow = document.createElement('tr');
   table.appendChild(footRow);
@@ -66,10 +96,12 @@ function footerFunction() {
     footRow.appendChild(cell);
   }
 
+
   let total = 0;
   for (let i = 0; i < perHourTotals.length; i++) {
     total += perHourTotals[i];
   }
+
 
   let totalCell = document.createElement('td');
   totalCell.textContent = total;
@@ -122,8 +154,6 @@ Store.prototype.render = function() {
 
 }
 
-
-
 // *** EXECUTABLE (executes on page load) CODE ***
 let seattle = new Store('Seattle', 23, 65, 6.3);
 let tokyo = new Store('Tokyo', 3, 24, 1.2);
@@ -142,5 +172,4 @@ cityArray.push(seattle, tokyo, dubai, paris, lima);
 headerFunction();
 renderAllCities();
 footerFunction();
-
 

@@ -1,5 +1,7 @@
 body {
   background-color:  #ffb39c;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -103,11 +105,11 @@ button {
 
 h1 {
   font-size: 40px;
-  color: Black;
+  color: rgb(255, 238, 0);
+  font-family: 'Crimson Text', serif;
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
 }
 
 h2, p {
@@ -116,22 +118,20 @@ h2, p {
   margin-right: 40px;
   margin-bottom: 20px;
   margin-top: 20px;
-
-}
-
-p {
+  color: rgb(27, 43, 219);
   font-family: 'Inria Serif', serif;
-  color: black;
+
 }
+
 
 
 h3 {
   font-size: 30px;
-  color: rgb(99, 0, 114);
   margin-bottom: 20px;
   margin-top: 25px;
   text-align: center;
-  font-family: 'Inria Serif', serif
+  color: rgb(27, 43, 219);
+  font-family: 'Inria Serif', serif;
 
 }
 
@@ -143,27 +143,31 @@ h3 {
 
 form {
   background-color: #d2becb;
-  color: black;
   padding: 16px 32px;
   margin: 4px;
   text-align: center;
   box-sizing: border-box;
-  width: 16%;
+  width: 45%;
   border: black solid 2px;
   border-radius: 10px;
-
+  font-family: 'Archivo', sans-serif; 
+  color: rgb(114, 0, 84);
 }
 
 #form-box {
   display:flex;
-  justify-content: center;
+  justify-content: center; 
+
 }
+
+
 
 input {
   display: block;
   margin-bottom: 25px;
   margin: 10px auto;
   
+
 }
 
 select {
@@ -180,10 +184,11 @@ legend {
 /* TABLES STYLE PAGE */
 
 table * {
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', sans-serif; 
+  border: 2px double rgb(114, 0, 84);
   color: rgb(114, 0, 84);
   background-color: white;
-  border: 2px double #b6035f;
+
   padding: 8px;
  
 }
@@ -208,7 +213,8 @@ footer {
   padding-right: 10px;
   height: 100px;
   margin-top: 30px;
-  font-family: 'Inria Serif', serif
+  font-family: 'Inria Serif', serif;
+  color:  rgb(27, 43, 219);
 
 }
 

@@ -15,7 +15,7 @@ This website is a simple online storefront that was created using JavaScript, CS
 
 ### Lighthouse Accessibility Report Score
 
-![access-image](img/access-image.jpg)
+![access-image](img/accessibility96.png)
 
 
 

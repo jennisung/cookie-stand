@@ -31,17 +31,6 @@ function handleSubmit(event){
 
   let newCityStore = new Store(cityInput, minCustomer, maxCustomer, cookiesPerDay);
 
-
-  // // cityArray.push(newCityStore);
-
-  // table.deleteRow(-1);
-
-  // newCityStore.renderList();
-
-  // footerFunction();
-
-  // myForm.reset();
-
   cityArray.push(newCityStore);
 
   let table = document.querySelector('table');

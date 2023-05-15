@@ -1,6 +1,6 @@
 # cookie-stand
 
-# Class Lab - 06
+# Class Lab - 6 through 10b
 
 ## Project Name: Cookie-Stand
 
@@ -16,6 +16,3 @@ This website is a simple online storefront that was created using JavaScript, CS
 ### Lighthouse Accessibility Report Score
 
 ![access-image](img/accessibility96.png)
-
-
-
